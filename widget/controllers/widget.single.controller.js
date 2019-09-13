@@ -123,7 +123,7 @@
         pauseStopVideo();
         var options = {
           imageUrl: $scope.WidgetSingle.video.snippet.thumbnails.default.url,
-          itemId: $scope.WidgetSingle.video.snippet.resourceId.videoId,
+          itemId: $routeParams.videoId,
           title: $scope.WidgetSingle.video.snippet.title,
           timeIndex: Math.round(window.player.getCurrentTime())
         };
